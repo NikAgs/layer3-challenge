@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "1c46d1d2-a09a-4c4a-b0c4-0f3e697fd4c8",
+		"name": "Layer3 Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Popular Quests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/api/quests/popular",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"quests",
+						"popular"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Most Paid Quests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/api/quests/mostPaid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"quests",
+						"mostPaid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total Rewarded (ETH)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/api/users/1/totalRewarded?currency=ETH",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"users",
+						"1",
+						"totalRewarded"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "ETH"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total Rewarded (USD)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/api/users/1/totalRewarded?currency=USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"users",
+						"1",
+						"totalRewarded"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "USD"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
